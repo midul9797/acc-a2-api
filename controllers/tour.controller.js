@@ -35,7 +35,7 @@ module.exports.getAllTours = async (req,res,next) =>{
         if(req.query.limit){
             dataLimit = req.query.limit;
             console.log(dataLimit);
-        }else dataLimit = 5;
+        }else dataLimit = 20;
         if(req.query.fields) allFields = req.query.fields.split(',').join(' ');
         if(req.query.page) page = req.query.page;
         else page =1;
